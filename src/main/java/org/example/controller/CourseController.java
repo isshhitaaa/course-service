@@ -54,4 +54,9 @@ public class CourseController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
+
+    @GetMapping("/health")
+    public ResponseEntity<String> healthCheck(){
+        return new ResponseEntity<>("Healthy!", HttpStatus.OK);
+    }
 }
