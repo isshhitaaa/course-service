@@ -57,6 +57,6 @@ public class CourseController {
 
     @GetMapping("/health")
     public ResponseEntity<String> healthCheck(){
-        return new ResponseEntity<>("Healthy!", HttpStatus.OK);
+        return new ResponseEntity<>("service is fit and Healthy!", HttpStatus.OK);
     }
 }
